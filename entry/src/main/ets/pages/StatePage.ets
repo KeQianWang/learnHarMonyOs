@@ -24,7 +24,7 @@ struct StatePage2 {
 
   build() {
     Column({space: 10}) {
-      Header()
+      Header({title:'女友列表'})
 
       Text(`${this.p.name} : ${this.p.age}`)
         .fontSize(50)

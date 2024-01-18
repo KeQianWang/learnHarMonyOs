@@ -1,4 +1,5 @@
 
+import { Header } from '../common/components/CommonComponents'
 @Styles function  card(){
   .width('95%')
   .padding(20)
@@ -34,6 +35,7 @@ struct PropPage {
   @Provide stat:StatInfo = new StatInfo()
   build() {
     Column({space:10}){
+      Header({title: '任务列表'})
       //1.任务进度卡片
       TaskStatistics()
 

@@ -1,3 +1,4 @@
+import { Header } from '../common/components/CommonComponents'
 @Entry
 @Component
 struct Index {
@@ -5,6 +6,7 @@ struct Index {
 
   build() {
     Column() {
+      Header({title: '图片查看'})
 
       Row(){
         Image($r('app.media.iron'))

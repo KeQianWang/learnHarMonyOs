@@ -85,7 +85,7 @@ struct Index {
 
   build() {
     Column({space:20}){
-      Header({tittle:'商品列表'})
+      Header({title:'商品列表'})
       .margin(20)
 
       List({space:8}){
