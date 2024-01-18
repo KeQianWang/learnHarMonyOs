@@ -6,13 +6,14 @@ const routers:RouterInfo[] = [
   new RouterInfo('pages/ItemPage', '商品列表'),
   new RouterInfo('pages/StatePage', 'Jack和他的女友'),
   new RouterInfo('pages/PropPage', '任务列表'),
+  new RouterInfo('pages/AnimationPage', '小鱼动画案例按钮版'),
+  new RouterInfo('pages/AnimationPage2', '小鱼动画案例摇杆版'),
 ]
 
 @Entry
 @Component
 struct Index {
   @State message: string = '页面列表'
-  // @State showPanel: boolean = false
   @Provide fontSize: number = 16
   build() {
       Column(){
@@ -32,11 +33,6 @@ struct Index {
         .fontSize(50)
         .fontWeight(FontWeight.Bold)
         .height(80)
-      // Image($r('app.media.ic_public_settings'))
-      //   .width(30)
-      //   .onClick(() => {
-      //     animateTo({ duration: 500, curve: Curve.EaseOut }, () => this.showPanel = !this.showPanel)
-      //   })
     }
     .justifyContent(FlexAlign.SpaceAround)
     .width('100%')
@@ -53,6 +49,7 @@ struct Index {
         }
       )
     }
+    .alignListItem(ListItemAlign.Center)
   }
 }
 
