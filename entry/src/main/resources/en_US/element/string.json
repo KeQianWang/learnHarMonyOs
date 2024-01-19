@@ -15,6 +15,22 @@
     {
       "name": "width_label",
       "value": "image width"
+    },
+    {
+      "name": "documentability_desc",
+      "value": "description"
+    },
+    {
+      "name": "documentability_label",
+      "value": "label"
+    },
+    {
+      "name": "DocumentAbility_desc",
+      "value": "description"
+    },
+    {
+      "name": "DocumentAbility_label",
+      "value": "label"
     }
   ]
 }

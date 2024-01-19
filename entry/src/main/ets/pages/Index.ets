@@ -10,6 +10,7 @@ const routers:RouterInfo[] = [
   new RouterInfo('pages/AnimationPage2', '小鱼动画案例摇杆版'),
   new RouterInfo('pages/LifeCirclePage', '生命周期案例1'),
   new RouterInfo('pages/TestPage1', '生命周期案例2'),
+  new RouterInfo('pages/DocumentListPage', 'UIAbility启动模式案例'),
 ]
 
 @Entry
