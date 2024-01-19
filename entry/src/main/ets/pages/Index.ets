@@ -8,6 +8,8 @@ const routers:RouterInfo[] = [
   new RouterInfo('pages/PropPage', '任务列表'),
   new RouterInfo('pages/AnimationPage', '小鱼动画案例按钮版'),
   new RouterInfo('pages/AnimationPage2', '小鱼动画案例摇杆版'),
+  new RouterInfo('pages/LifeCirclePage', '生命周期案例1'),
+  new RouterInfo('pages/TestPage1', '生命周期案例2'),
 ]
 
 @Entry
