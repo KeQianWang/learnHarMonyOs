@@ -11,6 +11,7 @@
     "pages/TestPage1",
     "pages/TestPage2",
     "pages/DocumentListPage",
-    "pages/DocumentPage"
+    "pages/DocumentPage",
+    "pages/ShopPage"
   ]
 }
