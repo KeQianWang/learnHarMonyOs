@@ -1,4 +1,5 @@
 import RouterInfo from '../viewmodel/RouterInfo'
+import IndexFontSizePanel from '../views/IndexFontSizePanel'
 import RouterItem from '../views/RouterItem'
 
 const routers:RouterInfo[] = [
@@ -18,6 +19,7 @@ const routers:RouterInfo[] = [
 @Component
 struct Index {
   @State message: string = '页面列表'
+  @State showPanel: boolean = false
   @Provide fontSize: number = 16
   build() {
       Column(){
@@ -26,6 +28,13 @@ struct Index {
 
         //导航列表
         this.RouterList()
+        // 字体修改面板
+        if(this.showPanel){
+          IndexFontSizePanel()
+            .transition({
+              translate: { y: 115 }
+            })
+        }
       }
     .width('100%')
     .height('100%')
@@ -37,6 +46,11 @@ struct Index {
         .fontSize(50)
         .fontWeight(FontWeight.Bold)
         .height(80)
+      Image($r('app.media.ic_public_settings'))
+        .width(30)
+        .onClick(() => {
+          animateTo({ duration: 500, curve: Curve.EaseOut }, () => this.showPanel = !this.showPanel)
+        })
     }
     .justifyContent(FlexAlign.SpaceAround)
     .width('100%')
